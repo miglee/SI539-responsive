@@ -1,0 +1,147 @@
+* {
+　　-moz-box-sizing: border-box;
+　　-webkit-box-sizing: border-box;
+　　box-sizing: border-box;
+	font-family: 'Roboto', Arial, sans-serif;
+	overflow: auto;
+    margin:0;
+}
+
+/*nav*/
+
+nav {
+    list-style-type: none;
+    text-align:right;
+    background-color: rgb(255,255,255,0.7);
+    height: 30px;
+    padding:10px;
+}
+
+nav li {
+    display: inline;
+    margin: 5px 5px;
+}
+
+nav li a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav li a:hover {
+    color: #969696;
+}
+
+/*footer*/
+
+footer {
+	background-color: #000;
+	height: 15vh;
+	text-align: center;
+    margin-top:15vh;
+    padding:15px;
+}
+
+footer p{
+	color: #ffffff;
+	font-size: 16px;
+    margin:5px;
+}
+
+footer i{
+color:#fff;
+font-size: 24px;
+overflow:hidden;
+margin:2px;
+
+}
+
+
+/*background*/
+.background {
+background-image: url(../images/background.jpg) ;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color:#ffffff;
+}
+
+
+/*container*/
+
+.center-h {
+    text-align: center;
+}
+.flex-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  margin:1% 5%;
+}
+
+
+.left {
+    flex:1 1 45%;
+    text-align: center;
+}
+.left img {
+    width: 80%;
+    height:auto;
+    margin: 0 auto;
+}
+.right {
+    flex: 1 1 40%;
+    padding: 2%;
+
+}
+
+.flex-box .img {
+    width: 320px;
+    height: 280px;
+    overflow: hidden;
+    text-align: center;
+    position:relative;
+    margin:1%;
+}
+
+.flex-box .img img {
+    max-width:140%;
+    min-width: 100%
+    max-height:140%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+}
+
+.text-title {
+    width: 70%;
+    margin: 0 auto;
+    padding:2%;
+}
+
+
+#about-img {
+    width: 300px;
+    height: auto;
+    border-radius:50%;
+}
+
+.flex-item {
+    border-radius: 3px;
+    padding:1.5%;
+    margin:4px;
+    height:150px;
+ flex:1 1 20%;   
+ align-self:center;
+ background-color: rgb(255,255,255,0.3);
+
+ 
+}
