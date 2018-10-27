@@ -9,29 +9,87 @@
 
 /*nav*/
 
+/*mobile-normal*/
 nav {
-    list-style-type: none;
-    text-align:right;
-    background-color: rgb(255,255,255,0.7);
-    height: 30px;
-    padding:10px;
+    display:none;
+    background-color: #fff;
+    width:100vw;
+    float:right;
+    text-align: center; 
 }
 
-nav li {
-    display: inline;
-    margin: 5px 5px;
-}
-
-nav li a {
+nav li{
+    padding:15px;
     color: #000000;
-    text-align: center;
+}
+nav a{
     text-decoration: none;
     font-size: 20px;
 }
 
-nav li a:hover {
+nav a:hover {
     color: #969696;
 }
+
+.nav-container {
+    width:100vw;
+    background-color: #ffffff;
+}
+
+label {
+    width: 35px;
+    height: 35px;
+    margin:10px;
+    margin-right: 20px;
+    float: right;
+    display: inline-block;
+    background-image: url(../images/icon-menu.svg); 
+}
+
+#toggle-checkbox{
+    display:none;
+}
+
+/*mobile-expand*/
+
+#toggle-checkbox:checked ~label{
+    background-image: url(../images/icon-cross.svg); 
+    background-size: 90%;
+}
+
+
+#toggle-checkbox:checked ~nav{
+    display:block;
+}
+
+
+/*bigscreen-normal*/
+@media screen and (min-width: 780px), (orientation: landscape) {
+
+label {
+    display:none;
+}
+
+nav {
+    display: block;
+    list-style-type: none;
+    margin-top:10px;
+    text-align:right;
+    background-color: rgb(255,255,255,0.7);
+}
+
+nav li {
+    display: inline;
+    color: #000000;
+    text-align: center;
+}
+
+
+nav li a:visited {
+    color: #000000;
+}
+}
+
 
 /*footer*/
 
@@ -59,13 +117,13 @@ margin:2px;
 
 
 /*background*/
-.background {
+/*.background {
 background-image: url(../images/background.jpg) ;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 color:#ffffff;
-}
+}*/
 
 
 /*container*/
