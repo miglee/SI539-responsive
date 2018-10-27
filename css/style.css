@@ -24,7 +24,7 @@ nav li{
 }
 nav a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 nav a:hover {
@@ -143,19 +143,36 @@ color:#ffffff;
   margin:1% 5%;
 }
 
+/*mobile-normal*/
 
 .left {
-    flex:1 1 45%;
+    flex:1 1 100%;
     text-align: center;
 }
 .left img {
-    width: 80%;
+    width: 100%;
     height:auto;
     margin: 0 auto;
 }
 .right {
-    flex: 1 1 40%;
+    flex: 1 1 100%;
     padding: 2%;
+
+}
+/*Tablet & Desktop*/
+
+@media screen and (min-width: 576px) {
+
+
+.left {
+    flex:1 1 45%;
+}
+.left img {
+    width: 80%;
+}
+.right {
+    flex: 1 1 40%;
+}
 
 }
 
@@ -192,14 +209,33 @@ color:#ffffff;
     border-radius:50%;
 }
 
+
+/*mobile-normal*/
+
 .flex-item {
     border-radius: 3px;
     padding:1.5%;
     margin:4px;
     height:150px;
- flex:1 1 20%;   
+ flex:1 1 100%;   
  align-self:center;
- background-color: rgb(255,255,255,0.3);
+ background-color: #EAEAEA;
 
- 
+}
+
+/*tablet*/
+@media screen and (min-width: 780px) {
+.flex-item {
+ flex:1 1 33%;   
+}
+
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px){
+
+.flex-item {
+ flex:1 1 20%;   
+}
+
 }
