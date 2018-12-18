@@ -50,6 +50,10 @@ label {
     display:none;
 }
 
+.toggle-container{
+  display:none;
+}
+
 /*mobile-expand*/
 
 #toggle-checkbox:checked ~label{
